@@ -1,0 +1,13 @@
+Compile:
+    $ gcc -DLINUX -ansi -I -Wall -D_GNU_SOURCE   -L./  cleanup.c  libapue.a -pthread -o cleanup
+
+Run result:
+$ ./cleanup
+    thread 2 start
+    thread 2 push complete
+    cleanup: thread 2 second handler
+    cleanup: thread 2 first handler
+    thread 1 start
+    thread 1 push complete
+    thread 1 exit code 1
+    thread 2 exit code 2
